@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .btn{
+            display:block;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;                      /* 한줄의 높이 지정 */
+            text-align: center;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 10px;                    /* 모서리 둥글게 */
+            background-color: lightgray;
+            font-size:.8rem;
+            color: white;
+            box-shadow: 3px 3px 3px lightgray;      /* 그림자 */
+            opacity: 0.8;                           /* 불투명도 조절 (0->투명, 0.5->반투명, 1->기본값) */
+            transition: 1s;                         /* 효과 시간 적용 */
+        }
+        .btn:hover{
+            opacity: 1;
+        }
+        .btn-1{background-color: orange;}
+        .btn-2{background-color: royalblue;}
+        .btn-3{background-color: brown;}
+    </style>
+</head>
+<body>
+    <a class="btn btn-1" href="./02_Basic.html">문서이동</a>
+    <a class="btn btn-2" href="./05_list.html" target="_blank">문서이동</a> <!-- 새창 -->
+    <a class="btn btn-3" href="https://www.naver.com/" target="_blank">네이버 바로가기</a>
+    <hr/>
+    
+    <a href="https://www.daum.net/" target="frm1">다음으로 이동</a>
+    <iframe src="https://www.daum.net/" frameborder="1" width="400px" height="400px" name="frm1"></iframe>
+
+    <hr/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xFTKv8XPDi0?si=IopQH2lg1k4w15dY" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr/>
+    <a href="javascript:void(0)">기능1</a> <!-- 항상 기본값으로 세팅 -->
+    <a href="javascript:void(0)">기능2</a> <!-- 동작 없애기 -->
+</body>
+</html>

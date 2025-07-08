@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.mainmenu{
+            height: 50px;
+            width: 100%;
+            border: 1px solid;
+
+            display:flex;
+            justify-content:center;
+            list-style: none;
+        }
+        ul.mainmenu>li>a>ul>li{
+            list-style:none;
+        }
+        ul.mainmenu>li>a{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="mainmenu">
+            <li>
+                <a href="">MAINMENU 1
+                    <ul>
+                        <li>SUBMENU1</li>
+                        <li>SUBMENU2</li>
+                        <li>SUBMENU3</li>
+                        <li>SUBMENU4</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

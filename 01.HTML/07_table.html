@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>테이블</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{ /* td : TML 표(table)의 셀(cell)을 나타내는 태그 */
+            text-align: center;
+            width:55px;
+            height:55px;
+            border: 1px solid;
+        }
+        .tbl{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" widtd="400px" align="center">
+    <caption>기본테이블</caption>
+        <tr>
+            <td>열 제목1</td>
+            <td>열 제목2</td>
+            <td>열 제목3</td>
+        </tr>
+        <tr>
+            <td>ALUVE1</td>
+            <td>VALUE2</td>
+            <td>VALUE3</td>
+        </tr>
+        <tr>
+            <td>VALUE1</td>
+            <td>VALUE2</td>
+            <td>VALUE3</td>
+        </tr>
+        <tr>
+            <td>VALUE1</td>
+            <td>VALUE2</td>
+            <td>VALUE3</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table class="tbl">
+    <caption>ROWSPAN</caption>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="4">4</td>
+        </tr>
+        <tr>
+            <!--<td>5</td>-->
+            <td>6</td>
+            <td rowspan="3">7</td>
+            <!--<td>8</td>-->
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <!--<td>11</td>-->
+            <!--<td>12</td>-->
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <!--<td>15</td>-->
+            <!--<td>16</td>-->
+        </tr>
+    </table>
+    <hr/>
+
+    <!-- rowspan -->
+    <table>
+    <caption>COLSPAN</caption>
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <!-- <td>4</td> -->
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td colspan="4">9</td>
+            <!-- <td>10</td> -->
+            <!-- <td>11</td> -->
+            <!-- <td>12</td> -->
+        </tr>
+        <tr>
+            <td>13</td>
+            <td colspan="3">14</td>
+            <!-- <td>15</td> -->
+            <!-- <td>16</td> -->
+        </tr>
+    </table>
+</body>
+</html>
