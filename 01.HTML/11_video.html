@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body::-webkit-scrollbar{
+            display:none;           /* body 영역의 스크롤바 제거 */
+        }
+        .bg-video{
+            position: absolute;     /* 화면 왼쪽 상단 기준 */
+            left:0;
+            top:0;
+            width:100vw;            /* 뷰포트(화면에 보이는 영역)를 기준으로 w : 100% */
+            height: 100vh;          /* 뷰포트를 기준으로 h : 100% */
+            z-index: -2;
+        }
+        .bg-video>video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;      /* fill 비율을 유지한 채 꽉 차게 채워줌 */
+        }
+        .gradient-overlay{
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 50%;
+            background:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0));
+            /* 배경에 그라디언트 효과 적용, to bottom : 위에서 아래 방향으로 그라디언트 생성
+               rgba( 시작 색 : 거의 불투명한 검정색 ), rgba( 끝 색 : 완전히 투명한 검정색) */
+        }
+        .wrapper{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper gradient-overlay">
+        <div class="bg-video">
+            <video controls autoplay loop muted>
+                <source src="../video/263305_tiny.mp4" type="video/mp4"> <!-- type : MIME -->
+            </video>
+        </div>
+    </div>
+</body>
+</html>

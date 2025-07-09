@@ -1,0 +1,84 @@
+@charset 'uft-8';
+
+*{
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    min-width: 80px;
+    text-align: center;
+    height: 100%;
+    font-size: 0.8rem;
+    line-height: 35px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.btn-submit{
+    text-align: center;
+    height: 100%;
+    font-size: 0.8rem;
+    line-height: 35px;
+    background-color: lightgray;
+    width:100%;
+    background-color: royalblue;
+    color: white;
+    border: 0;
+}
+.btn:hover{
+    background-color: lightslategrey;
+    color: #ffffff;
+}
+.btn-submit:hover{
+    background-color: darkblue;
+    color: #ffffff;
+}
+.top-title{
+    height: 15px !important;
+    background-color: black;
+}
+.title{
+    margin-bottom: 25px;
+    border-bottom: 1px;
+    padding-bottom: 10px;
+}
+.top-header>h2{
+    text-align: center;
+}
+a{
+    border: 1px solid #333;
+    text-decoration: none;
+    color:black;
+}
+form{
+    font-size: 0.9rem;
+    width: 450px;
+    border: 2px solid;
+    margin: 0 auto;
+    margin: 50px auto;
+}
+form>.row{
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    height: 35px;
+}
+form>.row>label{
+    display: block;
+    min-width: 85px;
+    height: 100%;                   /* %는 부모의 크기 따라감 */
+    line-height: 35px;              /* 높이 중간으로 */
+}
+form>.row>input[type="text"],[type="password"],
+form>.row>select{                                   /* input안의 [속성] -> 속성 값만 선택 */
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid gray;
+    outline:none;
+}
