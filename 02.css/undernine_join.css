@@ -9,28 +9,90 @@ body{
     padding: 0;
     margin: 0 auto;
 }
+img{
+    width: 22px;
+    float:left;
+    margin-left: -42px;
+    margin-top: -2px;
+    position: absolute;
+}
+.header{
+    text-align: center;
+    color: #333;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid lightgray;
+    font-size: 11px;
+    border-radius: 4px;
+    font-weight:bold;
+    cursor: pointer;
+    width:207px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.btn{
+    justify-content: center;
+    display: flex;
+    background-color: #ffffff;
+    gap: 20px;
+    padding-bottom: 42px;
+}
 form{
+    font-size: 0.7rem;
+    color:black;
     width: 450px;
     border: 1px solid;
     margin: 0 auto;
-    margin: 50px auto;
+    margin: 200px auto;
 }
 .row{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 form>.row{
     display: flex;
     justify-content: left;
     align-items: center;
-    gap:12px;
+    gap:3px;
+    height: 30px;
 }
-#row2{
-    margin-top: -12px;
+form>div>label{
+    padding-left: 16px;
+    width:190px;
+    display:block;
+    font-weight: bold;
+}
+.left-shift{
+    margin-left: -55px;
+}
+.input-row{
+    width: 60px;
+}
+.row>select{
+    width: 60px;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+form>div>input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+.cspan{
+    margin-top: -14px;
+    margin-left: 145px;
+    padding-bottom: 12px;
 }
 span{
-    font-size: 12px;
+    font-size: 0.65rem;
 }
-#cspan{
+.cspan>span:first-child{
     color: red;
+    display:none; /* 임시 JS에서 활용예정 */
 }
