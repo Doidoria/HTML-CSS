@@ -74,7 +74,7 @@ form>.row>label{
     height: 100%;                   /* %는 부모의 크기 따라감 */
     line-height: 35px;              /* 높이 중간으로 */
 }
-form>.row>input[type="text"],[type="password"],
+form>.row>input[type="text"],[type="password"],[type="email"],
 form>.row>select{                                   /* input안의 [속성] -> 속성 값만 선택 */
     height: 100%;
     width: 100%;

@@ -7,14 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    margin: 0 auto;
-}
-img{
-    width: 22px;
-    float:left;
-    margin-left: -42px;
-    margin-top: -2px;
-    position: absolute;
+    margin-top: 200px;
 }
 .header{
     text-align: center;
@@ -29,25 +22,17 @@ a{
     border-radius: 4px;
     font-weight:bold;
     cursor: pointer;
-    width:207px;
+    width:220px;
     height: 40px;
     text-align: center;
     padding-top: 10px;
 }
-.btn{
-    justify-content: center;
-    display: flex;
-    background-color: #ffffff;
-    gap: 20px;
-    padding-bottom: 42px;
-}
 form{
-    font-size: 0.7rem;
-    color:black;
-    width: 450px;
+    font-size: 0.8rem;
+    color:#333;
+    width: 530px;
     border: 1px solid;
     margin: 0 auto;
-    margin: 200px auto;
 }
 .row{
     width: 100%;
@@ -67,7 +52,7 @@ form>div>label{
     font-weight: bold;
 }
 .left-shift{
-    margin-left: -55px;
+    margin-left: -48px;
 }
 .input-row{
     width: 60px;
@@ -84,13 +69,36 @@ form>div>input{
     border: 1px solid lightgray;
     border-radius: 2px;
 }
+.btn-input>img{
+    width: 5%;
+    margin-left: -215px;
+    margin-top: 10px;
+    position: absolute;
+}
+.btn{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 42px;
+    position: relative;
+}
+.btn-input>input{
+    width: 245px;
+    height: 48px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
 .cspan{
     margin-top: -14px;
     margin-left: 145px;
     padding-bottom: 12px;
 }
 span{
-    font-size: 0.65rem;
+    font-size: 0.7rem;
 }
 .cspan>span:first-child{
     color: red;

@@ -1,0 +1,43 @@
+form:nth-child(2){
+    margin-top: 30px;
+    border: none;
+}
+.box{
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+    align-items: center;
+    padding-left: 15px;
+    min-height: 50px;
+    display:flex;
+}
+.box-column{
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box>input{
+    width: 18px;
+}
+.box>label{
+    font-size: 0.85rem;
+    color: #333;
+    font-weight:bold;
+    width: 100%;
+}
+.box>.inbox{
+    width:80%
+}
+.scroll-box{
+    width: 95%;
+    height: 120px;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    overflow-y: auto;                /* 세로 스크롤 */
+}
+.box-column>span{
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+}

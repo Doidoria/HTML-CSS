@@ -15,6 +15,11 @@
             margin: 0;
             padding: 0;
         }
+        h2{
+            text-align: center;
+            padding-bottom: 25px;
+            padding-top: 15px;
+        }
         .btn-submit {
             text-align: center;
             height: 100%;
@@ -45,7 +50,7 @@
         }
         form {
             font-size: 0.9rem;
-            width: 450px;
+            width: 520px;
             border: 2px solid;
             margin: 0 auto;
             margin: 50px auto;
@@ -78,7 +83,7 @@
         <div class="m-2 row">
             <label class="form-label col-3" for="">우편번호</label>
             <input class="form-control col" type="text" name="zipcode">
-            <a class="col" href="javascript:void(0)">검색</a>
+            <a class="col-3 btn btn-primary ms-2" href="javascript:void(0)">검색</a>
         </div>
         <div class="m-2 row">
             <label class="form-label col-3" for="">기본주소</label>
@@ -95,7 +100,7 @@
                 <option value="">011</option>
             </select>
             <input class="form-control col me-2" type="text" maxlength="4" />
-            <input class="form-control col me-2" type="text" maxlength="4" />
+            <input class="form-control col md-2" type="text" maxlength="4" />
         </div>
         <div class="m-2 row">
             <label class="form-label col-3" for="">연락처</label>
@@ -105,21 +110,27 @@
                 <option value="">02</option>
             </select>
             <input class="form-control col me-2" type="text" maxlength="3" />
-            <input class="form-control col me-2" type="text" maxlength="4" />
+            <input class="form-control col md-2" type="text" maxlength="4" />
         </div>
         <div class="m-2 row">
             <label class="form-label col-3" for="">이메일</label>
-            <input class="form-control col" type="text" name="email">
-            <select class="form-select col me-2">
+            <input class="form-control col me-2" type="text" name="email">
+            <select class="form-select col md-2">
                 <option value="">@naver.com</option>
                 <option value="">@daum.net</option>
                 <option value="">@google.com</option>
             </select>
         </div>
-        <div class="m-2 row">
+        <div class="m-2 row cols-auto">
             <label class="form-label col-3" for="">생년월일</label>
-            <input class="form-check-input p-0 col-2" type="radio" name="cal" value="1">양
-            <input class="form-check-input p-0 col-3" type="radio" name="cal" value="0">음
+            <div class="form-check form-check-inline col-1 me-2">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">양</label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">음</label>
+            </div>
         </div>
         <div class="m-2 row">
             <select class="form-select col me-2" id="year-select">
@@ -134,11 +145,11 @@
         </div>
         <hr />
         <div class="m-2 row">
-            <input class="form-check-input col-3" type="checkbox" id="email-recv">
+            <input class="form-check-input col-3 p-0" type="checkbox" id="email-recv">
             <label class="form-check-label col" for="email-recv">이메일을 수신을 동의합니다.</label>
         </div>
         <div class="m-2 row">
-            <input class="form-check-input col-3" type="checkbox" id="sns-recv">
+            <input class="form-check-input col-3 p-0" type="checkbox" id="sns-recv">
             <label class="form-check-label col" for="sns-recv">문자 및 SNS를 수신을 동의합니다.</label>
         </div>
         <div>
